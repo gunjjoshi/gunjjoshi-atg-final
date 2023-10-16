@@ -1,38 +1,566 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Navbar */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  height: 4.5rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.searchbar{
+  background-color:  #F2F2F2;
+  display: flex;
+  height: 2.62rem;
+  width: 22.5rem;
+  border-radius: 4rem;
+}
+.searchIcon{
+  margin: 0.7rem;
+  color: #7A7A7A;
+}
+
+input{
+  background: none;
+color: inherit;
+border: none;
+padding: 0;
+font: inherit;
+cursor: pointer;
+outline: inherit;
+  width: 22rem;
+  
+}
+.create_account {
+  font-size: 16px;
+}
+.its-free{
+  font-size: 16px;
+  color: #2F6CE5;
+}
+
+.its_free{
+  background: none;
+color: inherit;
+border: none;
+padding: 0;
+font: inherit;
+cursor: pointer;
+outline: inherit;
+
+}
+.triangle{
+  margin: 3px;
+  margin-left: 8px;
+}
+.shapes{
+  display: none;
+}
+
+
+.Navbar .Dropdown {
+  width: 21rem;
+  height: 2.1rem;
+}
+
+
+.Navbar .Dropdown .DropItem {
+  margin-right: 1.9rem;
   color: white;
+  margin-top: 2.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+ .Dropbutton {
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Signup-Input {
+  background: #f7f8fa;
+  border: 0.1rem solid #d9d9db;
+  box-sizing: border-box;
+  border-radius: 0.2rem 0.2rem 0 0;
+  height: 4.6rem;
+  width: 32rem;
+  padding-left: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.Signup-btn {
+  margin-top: 3.1rem;
+  border: none;
+  width: 32rem;
+  height: 4rem;
+  background: #2f6ce5;
+  border-radius: 2rem;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Signup-using {
+  margin-top: 0.8rem;
+  width: 32rem;
+  height: 3.8rem;
+  background: #ffffff;
+  border: 0.06rem solid #d9d9db;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+
+
+/* Banner */
+.banner{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%) , url("../src/Assets/banner.svg");
+  background-size: 100% 100%;
+  height: 27.5rem;
+  background-size: cover;
+ 
+}
+.banner_heading{
+  position: relative;
+  top: 17.87rem;
+  left: 15%;
+  color: white;
+  width: 23rem;
+}
+.banner_h1{
+  margin-top: 0;
+  font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 47px;
+}
+.banner h3{
+  font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+}
+
+
+/* Mainpage */
+
+.titles{
+  margin: 2.93rem 12.5rem;
+  margin-left: 11%;
+  
+}
+.titles_a{
+  margin: 1rem;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #8A8A8A;
+  /* border-bottom: 2px solid black; */
+  text-decoration: none;
+  /* padding-bottom: 2rem; */
+
+}
+.btn{
+  width: 96%;
+  margin-left: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.titles_active{
+  margin: 1rem;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: black;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  padding-bottom: 2rem;
+}
+.titles_a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  margin-left: 13%;
+  width: 82%;
+  position: relative;
+  top: -1.5rem;
+
+} 
+.main_items{
+    display: flex;
+}
+.main_page_buttons{
+    display: flex;
+    width: 18.12rem;
+    justify-content: space-between;
+    margin: auto;
+    cursor: pointer;
+}
+.writebtn{
+ width: 8.313rem;
+ height: 2.25rem;
+ border-radius: 4px;
+ border: none;
+ cursor: pointer;
+}
+.joinbtn{
+  width: 8.313rem;
+  height: 2.25rem;
+  border-radius: 4px;
+  border: none;
+  background: #2F6CE5;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.add_icon{
+  vertical-align: middle;
+  margin-right: 2px;
+}
+/* card */
+.card {
+    width: 75%;
+    height: 100%;
+    background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+margin-left: 19%;
+margin-top: 1rem;
+
+}
+
+.first_line{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.second_line{
+
+}
+
+.last_line{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 0;
+  
+}
+.article{
+  font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+margin: 1.2rem;
+color: #000000;
+}
+.card_img{
+  width: 100%;
+  height: auto;
+}
+.headline{
+  /* font-family: IBM Plex Sans; */
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 134.17%;
+/* or 30px */
+width: 74%;
+margin-left: -19px;
+
+
+color: #000000;
+}
+.share_btn{
+  display: none;
+}
+.tree_dots{
+  position: relative;
+  top: -1rem;
+}
+.second_line{
+  font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 134.17%;
+/* or 25px */
+color: #5C5C5C;
+
+margin: 1.25rem;
+}
+.name_man{
+  margin: 1rem;
+  font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.date{
+  font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+margin-left: 2rem;
+/* identical to box height */
+
+
+color: #000000;
+}
+.photo_name{
+  position: relative;
+  /* left: -2%; */
+  display: flex;
+}
+.views_btn{
+  
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  /* right: -4rem; */
+}
+.views{
+  margin-right: 2rem;
+}
+.location_card{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.mid{
+  display: flex;
+}
+
+
+
+
+.postcnt button{
+  height: 1.5rem;
+  width: 6rem;
+}
+.postcnt{
+  display: none;
+ }
+ .views_btn{
+  margin-right: 3%;
+ }
+ .join{
+     display: none;
+ }
+ .btn_mbl{
+  display: none;
+}
+.part{
+  display: flex;
+}
+
+
+ 
+ @media (max-width: 1000px) {
+  .searchbar{
+      display: none;
+     }
+     .main_items{
+      display: none;  
   }
-  to {
-    transform: rotate(360deg);
+  .Location{
+      display: none;    
   }
+  
+     .mainpage_hr{
+         display: none;
+     }
+     .postcnt{
+      /* display: block; */
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3%;
+     }
+     .card {
+      width: 80%;
+      height: 100%;
+      background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+margin-left: 10%;
+margin-top: 1rem;
+
+  }
+  .shapes{
+      display: none;
+  }
+  .banner_heading {
+      position: relative;
+      top: 67%;
+      left: 10%;
+      color: white;
+      width: 87%;
+      /* font-size: 39%; */
+  }
+  .btn_mbl{
+      display: none;
+  }
+}
+
+@media (max-width: 450px){
+  .navbar {
+      display: flex;
+      height: 2.5rem;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 0px 1px 2px rgb(0 0 0 / 12%);
+  }
+  .btn_mbl{
+      display: block;
+  }
+  
+  .postcnt{
+   /* display: block; */
+   display: flex;
+   justify-content: space-around;
+   margin-top: 3%;
+  }
+ 
+  .logo{
+      display: none;  
+  }
+  .Dropdown{
+      display: none;
+  }
+  .banner{
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%) , url("./Assets/moblap.svg");
+      /* background-size: 100% 100%; */
+      height: auto;
+      background-size: cover;
+      height: 15rem;
+     
+  }
+  .banner_heading {
+      position: relative;
+      top: 47%;
+      left: 5%;
+      color: white;
+      width: 87%;
+      /* font-size: 39%; */
+  }
+  .banner_h1 {
+      margin-top: 0;
+      font-family: IBM Plex Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+  }
+  .banner h3 {
+      font-family: IBM Plex Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 8px;
+  }
+  .shapes{
+      display: block;
+      width: 100%;
+      display: flex;
+      padding-right: 2rem;
+      justify-content:right;
+  }
+  .oval{
+      margin: 8px;
+  }
+  .html{
+      font-size: 62.5%;
+  }
+  .card {
+      width: 100%;
+      /* height: 10%; */
+      background: #FFFFFF;
+      border: 1px solid #E0E0E0;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 1rem;
+  }
+  .views_btn{
+      display: none;
+  }
+  .share_btn{
+      display: block;
+  }
+  .join{
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      width: 88%;
+      margin-left: 7%;
+      padding-top: 4%;
+  }
+  .headline {
+      /* font-family: IBM Plex Sans; */
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 134.17%;
+      width: 74%;
+      color: #000000;
+      margin-left: 2px;
+  }
+  .second_line {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 134.17%;
+      color: #5C5C5C;
+      margin: 1.25rem;
+  }
+  .name_man {
+      margin: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 23px;
+      color: #000000;
+  }
+ .btn_mbl{
+  width: 96%;
+  /* margin-left: 1rem; */
+  margin: 3px;
+  cursor: pointer;
+ } 
+ .btn{
+     display: none;
+ }
+  
 }
